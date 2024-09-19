@@ -1,0 +1,10 @@
+SQL> create table persons (first name varchar (20), last name varchar(10)); 
+Table created; 
+Create an index for the above relation based on last name 
+SQL> create index plndex on persons (last name); 
+Index created.  
+SQL> select * from persons; No rows selected.  
+SQL> drop plndex on persons; 
+Drop index plndex on persons 
+* ERROR at line1:  
+ORA_00950: Invalid DROP option
